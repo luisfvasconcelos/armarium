@@ -24,24 +24,24 @@
     <body>
         <ul class="nav nav-tabs" id="menu">
             <li>
-                <img alt="armarium" id="logo" class="logo">
+                <img alt="armarium" id="logo-menu" class="logo">
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-chevron-down icon-white"></i> View</a>
                 <ul class="dropdown-menu">
                     <li class="">
-            	        <a href="#list"><i class="icon-list"></i> List</a>
+            	        <a href="#list"><i class="icon-th-list"></i> List</a>
                     </li>
                     <li class="active">
-            	        <a href="#column"><i class="icon-pause"></i> Column</a>
+            	        <a href="#column"><i class="icon-th"></i> Column</a>
                     </li>
                 </ul>
             </li>
             <li>
-            	<a id="capture" href="#plus"><i class="icon-plus"></i> Add</a>
+            	<a id="capture" href="#plus"><i class="icon-plus icon-white"></i> Add</a>
             </li>
             <li>
-            	<a  href="#config"><i class="icon-cog"></i> ...</a>
+            	<a  href="#config"><i class="icon-cog icon-white"></i> Options</a>
             </li>
         </ul>
         <div ng-controller="ImageListCtrl">
@@ -71,7 +71,7 @@
                 </div>
                 <div class="tab-pane" id="plus">
                     <form novalidate>
-                        <img id="smallImage" style="width:100%;height:50%;" src="img/logo.jpg">
+                        <img alt="armarium" id="logo-content" class="logo">
                         <br>
                         <input type="text" name="name"  placeholder="Name" id="name" /><br>
                         <textarea name="description"  placeholder="Description" id="description"></textarea>

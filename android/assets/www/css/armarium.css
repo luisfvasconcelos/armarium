@@ -4,25 +4,54 @@ body {}
 *************************************/
 #menu {
 background:#9154E8;
+border-bottom:1px solid #7D31E8;
 border-top:1px solid #7D31E8;
 color:#fff;
 font-size:14px;
 font-weight:bold;
-padding:5px; }
+padding:15px 5px 5px; }
 
 #menu li {
 border-right:1px solid #ffffff;
 padding:0 5px; }
 
+#menu li:first-child { border-right:0px solid transparent; }
 #menu li:last-child { border-right:0px solid transparent; }
 
-#menu li #logo {
+#menu li #logo-menu {
 background:url("/img/logo.jpg") no-repeat 0 0 #fff;
 display:block;
-height:30px;
-width:30px; }
+margin-top: -10px;
+height:60px;
+width:60px; }
 
-#menu li a { color:#fff; }
-#menu li .dropdown-menu {}
+#menu li a {
+color:#fff;
+border-radius:4px; }
+
+/*
+    QUANDO ESTIVER CHECADO,
+    HOVER, ACIONADO E OU ATIVO
+*/
+.nav-tabs .open .dropdown-toggle,
+.nav-pills .open .dropdown-toggle,
+#menu li a:hover,
+.nav > li.dropdown.open.active > a:hover { background:#BFA1E9; }
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+background:#BFA1E9; }
+
+#menu li .dropdown-menu {
+background: #9154E8;
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
+margin-top: 18px;
+padding: 15px 0 5px 0;
+border-bottom: none;
+border-left: none;
+border-right: none;
+box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2); }
+
 #menu li .dropdown-menu li {}
 #menu li .dropdown-menu li a {}
